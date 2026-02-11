@@ -53,7 +53,7 @@ public class EmailService {
     public void sendUserDeletedEmail(User user) {
         sendPlainEmail(
                 HR_EMAIL,
-                "Account Deactivated - " + user.getFirstName(),
+                "Account Deleted - " + user.getFirstName(),
                 "User " + user.getEmail() + " has been deactivated."
         );
     }
